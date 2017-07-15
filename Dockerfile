@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Craig Citro <craigcitro@google.com>
+MAINTAINER Julian Rachman <jmrachman@gmail.com>
 
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -44,7 +44,7 @@ RUN pip --no-cache-dir install \
 
 # Install TensorFlow CPU version from central repo
 RUN pip --no-cache-dir install \
-    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp35-cp35m-manylinux1_x86_64.whl
+    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.0.0-cp35-none-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
 # RUN ln -s /usr/bin/python3 /usr/bin/python#
