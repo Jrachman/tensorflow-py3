@@ -4,6 +4,8 @@
 
 1. There is a pre-built image that was created: https://hub.docker.com/r/julianrachman/tensorflow-py3/. 
 
+2. Execute `docker pull julianrachman/tensorflow-py3:latest` in the terminal.
+
 2. Use `docker run -it -p 8888:8888 -e "PASSWORD=pass" --name jrtfpy3 julianrachman/tensorflow-py3:latest /bin/bash` to run this.
 
 **Local build**
