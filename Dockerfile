@@ -43,7 +43,7 @@ RUN pip --no-cache-dir install \
 
 # Install TensorFlow CPU version from central repo
 RUN pip --no-cache-dir install \
-    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.0.0-cp35-none-linux_x86_64.whl
+    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp35-cp35m-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
 COPY jupyter_notebook_config.py /root/.jupyter/
