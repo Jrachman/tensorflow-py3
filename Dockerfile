@@ -1,9 +1,7 @@
-#foobar
 FROM ubuntu:16.04
 
 MAINTAINER Julian Rachman <jmrachman@gmail.com>
 
-# Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         curl \
@@ -48,22 +46,15 @@ RUN pip --no-cache-dir install \
     http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.0.0-cp35-none-linux_x86_64.whl
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
-# RUN ln -s /usr/bin/python3 /usr/bin/python#
-
-# Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
 
-# Copy sample notebooks.
 COPY notebooks /notebooks
 
-# Jupyter has issues with being run directly:
-#   https://github.com/ipython/ipython/issues/7062
-# We just add a little wrapper script.
 COPY run_jupyter.sh /
 
-# TensorBoard
+
 EXPOSE 6006
-# IPython
+
 EXPOSE 8888
 
 WORKDIR "/notebooks"
