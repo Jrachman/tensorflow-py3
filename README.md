@@ -1,5 +1,7 @@
 # tensorflow-py3-docker
 
+Designed for heavy compuations using Tensorflow in Python 3.
+
 **Pre-built image**
 
 1. There is a pre-built image that was created: https://hub.docker.com/r/julianrachman/tensorflow-py3/. 
