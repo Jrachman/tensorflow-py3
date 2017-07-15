@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libpng12-dev \
         libzmq3-dev \
         pkg-config \
-        python \
-        python-dev \
+        python3 \
+        python3-dev \
         rsync \
         software-properties-common \
         unzip \
@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
-    python get-pip.py && \
+    python3 get-pip.py && \
     rm get-pip.py
 
 RUN pip --no-cache-dir install \
