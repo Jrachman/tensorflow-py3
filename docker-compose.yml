@@ -3,6 +3,6 @@ services:
   notebook:
     build: .
     environment:
-      - PASSWORD=test
+      - PASSWORD=pass
     ports:
       - "8888:8888"
