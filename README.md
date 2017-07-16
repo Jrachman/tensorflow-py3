@@ -23,6 +23,10 @@ Designed for heavy compuations using Tensorflow in Python 3.
 3. After the build is complete, execute `docker images`, find the most recent `IMAGE ID`.
  
 4. Now execute `docker run -it -p 8888:8888 -e "PASSWORD=pass" --name jrtfpy3 <IMAGE ID> /bin/bash`.
+
+5. In the bash line, execute `cd /` then `chmod +x run_jupyter.sh`. This will activate run_jupyter.sh as an executable.
+
+6. Finally, run `./run_jupyter.sh --allow-root` and you are set! Just visit localhost:8888 and the password should be "pass."
  
 **Docker Compose build**
  
