@@ -1,5 +1,7 @@
 # tensorflow-py3-docker
 
+Developer: Julian Rachman (jmrachman at gmail dot com)
+
 Designed for heavy compuations using Tensorflow in Python 3.
 
 **Pre-built image**
