@@ -8,7 +8,11 @@ Designed for heavy compuations using Tensorflow in Python 3.
 
 2. Execute `docker pull julianrachman/tensorflow-py3:latest` in the terminal.
 
-2. Use `docker run -it -p 8888:8888 -e "PASSWORD=pass" --name jrtfpy3 julianrachman/tensorflow-py3:latest /bin/bash` to run this.
+3. Use `docker run -it -p 8888:8888 -e "PASSWORD=pass" --name jrtfpy3 julianrachman/tensorflow-py3:latest /bin/bash` to run this.
+
+4. In the bash line, execute `cd /` then `chmod +x run_jupyter.sh`. This will activate run_jupyter.sh as an executable.
+
+5. Finally, run `./run_jupyter.sh --allow-root` and you are set! Just visit localhost:8888 and the password should be "pass."
 
 **Local build**
 
