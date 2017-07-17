@@ -51,4 +51,4 @@ EXPOSE 8888
 
 WORKDIR "/notebooks"
 
-ENTRYPOINT "cd config" && "chmod +x run_jupyter.sh" && "/bin/bash"
+ENTRYPOINT "cd notebooks/config" && "chmod +x run_jupyter.sh" && "/bin/bash"
