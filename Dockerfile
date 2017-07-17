@@ -52,3 +52,5 @@ EXPOSE 8888
 WORKDIR "/notebooks"
 
 RUN cd config && chmod +x run_jupyter.sh
+
+# --- DONE --- #
