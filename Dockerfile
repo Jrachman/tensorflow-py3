@@ -53,4 +53,4 @@ WORKDIR "/notebooks"
 
 CMD ["cd config"]
 
-CMD["chmod +x run_jupyter.sh"]
+CMD ["chmod +x run_jupyter.sh"]
