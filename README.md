@@ -16,7 +16,7 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 **Local build**
 
-1. Download this repository, extract, and navigate to the directory where the `Dockerfile` is located using your terminal.
+1. Download the GitHub repository (https://github.com/Jrachman/tensorflow-py3-docker/), extract, and navigate to the directory where the `Dockerfile` is located using your terminal.
 
 2. Then execute the command `docker build .`.
  
