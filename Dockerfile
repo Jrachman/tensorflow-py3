@@ -36,14 +36,6 @@ RUN pip --no-cache-dir install \
     python3 -m ipykernel.kernelspec
 
 # --- DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
-# These lines will be edited automatically by parameterized_docker_build.sh. #
-# COPY _PIP_FILE_ /
-# RUN pip --no-cache-dir install /_PIP_FILE_
-# RUN rm -f /_PIP_FILE_
-
-# Install TensorFlow CPU version from central repo
-#RUN pip --no-cache-dir install \
- #   http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.1-cp35-cp35m-linux_x86_64.whl
 RUN pip install tensorflow==1.2.1
 # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
@@ -51,8 +43,7 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 
 COPY notebooks /notebooks
 
-COPY run_jupyter.sh /
-
+COPY run_jupyter.sh /notebooks/config
 
 EXPOSE 6006
 
@@ -60,4 +51,4 @@ EXPOSE 8888
 
 WORKDIR "/notebooks"
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["cd config", "chmod +x run_jupyter.sh"]
