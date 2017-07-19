@@ -32,7 +32,7 @@ RUN pip --no-cache-dir install \
         pandas \
         scipy \
         sklearn \
-        jupyter-cjk-xelatex-0.2 \
+        jupyter-cjk-xelatex \
         && \
     python3 -m ipykernel.kernelspec
 
