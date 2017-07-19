@@ -5,6 +5,7 @@ MAINTAINER Julian Rachman <jmrachman@gmail.com>
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         curl \
+        git \
         libfreetype6-dev \
         libpng12-dev \
         libzmq3-dev \
@@ -14,7 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         rsync \
         software-properties-common \
         unzip \
-        git \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -24,19 +24,20 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     rm get-pip.py
 
 RUN pip --no-cache-dir install \
+        GitPython \
         Pillow \
         h5py \
         ipykernel \
         jupyter \
+        jupyter-cjk-xelatex \
         matplotlib \
+        nbconvert \
         numpy \
         pandas \
         scipy \
         sklearn \
-        jupyter-cjk-xelatex \
-        nbconvert \
         zeep \
-        gitpython \
+        
         && \
     python3 -m ipykernel.kernelspec
 
