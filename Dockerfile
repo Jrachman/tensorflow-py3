@@ -33,6 +33,8 @@ RUN pip --no-cache-dir install \
         scipy \
         sklearn \
         jupyter-cjk-xelatex \
+        zeep \
+        gitpython \
         && \
     python3 -m ipykernel.kernelspec
 
