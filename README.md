@@ -1,10 +1,16 @@
 # tensorflow-py3-docker
 
-Developer: Julian Rachman (jmrachman at gmail dot com)
-
 Designed for heavy computations using TensorFlow in Python 3.
 
-**Pre-built image**
+**Dockerfile:** https://github.com/Jrachman/tensorflow-py3-docker/blob/master/Dockerfile
+
+**Developer:** Julian Rachman (jmrachman@gmail.com)
+
+---
+
+**Setup and run**
+
+*Pre-built image*
 
 1. There is a pre-built image that was created: https://hub.docker.com/r/julianrachman/tensorflow-py3/. 
 
@@ -14,7 +20,7 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 4. Run `config/run_jupyter.sh --allow-root` and you are set! Just visit http://localhost:8888 and the password should be "pass."
 
-**Local build**
+*Local build*
 
 1. Download the GitHub repository (https://github.com/Jrachman/tensorflow-py3-docker/), extract, and navigate to the directory where the `Dockerfile` is located using your terminal.
 
@@ -26,7 +32,7 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 4. Run `config/run_jupyter.sh --allow-root` and you are set! Just visit http://localhost:8888 and the password should be "pass."
  
-**Docker Compose build**
+*Docker Compose build*
  
 1. `docker-compose build`
  
