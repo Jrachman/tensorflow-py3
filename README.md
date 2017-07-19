@@ -54,6 +54,10 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 1. Navigate to the Docker container terminal and make sure you are in the "notebooks" directory. 
 
-2. Execute the commands `git add .` and `git push`
+2. `git add .` 
+
+3. `git commit -m "<MESSAGE>"`
+
+4. `git push`
 
  
