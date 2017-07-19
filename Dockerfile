@@ -37,7 +37,6 @@ RUN pip --no-cache-dir install \
         scipy \
         sklearn \
         zeep \
-        
         && \
     python3 -m ipykernel.kernelspec
 
