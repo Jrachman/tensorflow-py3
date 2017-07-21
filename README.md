@@ -42,6 +42,12 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 **Git**
 
+*Clone*
+
+1. Navigate to the Docker container terminal and make sure you are in the "notebooks" directory. 
+
+2. `git clone <your repsoitory URL>`
+
 *Initial push*
 
 1. Navigate to the Docker container terminal and make sure you are in the "notebooks" directory. 
@@ -58,7 +64,7 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 7. `git remote -v`
 
-8. `git push origin master`
+8. `git push -u origin master`
 
 *Further pushing*
 
