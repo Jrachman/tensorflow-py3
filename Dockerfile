@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         pkg-config \
         python3 \
         python3-dev \
+        python3-tk \
         rsync \
         software-properties-common \
         unzip \
@@ -38,7 +39,6 @@ RUN pip --no-cache-dir install \
         requests \
         scipy \
         sklearn \
-        tkinter \
         zeep \
         && \
     python3 -m ipykernel.kernelspec
