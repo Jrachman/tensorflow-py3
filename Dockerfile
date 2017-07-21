@@ -38,7 +38,7 @@ RUN pip --no-cache-dir install \
         requests \
         scipy \
         sklearn \
-        Tkinter \
+        tkinter \
         zeep \
         && \
     python3 -m ipykernel.kernelspec
