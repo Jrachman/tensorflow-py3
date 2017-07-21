@@ -76,6 +76,6 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 4. `git commit -m "<MESSAGE>"`
 
-5. `git push`
+5. `git push -u origin master`
 
  
