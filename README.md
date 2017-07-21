@@ -46,18 +46,30 @@ Designed for heavy computations using TensorFlow in Python 3.
 
 1. Navigate to the Docker container terminal and make sure you are in the "notebooks" directory. 
 
-2. Configure Git for the first time by running the commands `git config --global user.name "<NAME>"` and `git config --global user.email "<EMAIL>"`
+2. Configure Git for the first time by running the command `git config --global user.name "<NAME>" && git config --global user.email "<EMAIL>"`
 
-3. Follow the following link's instructions: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/ (if you are pushing to a remote site, when you get to step 8, follow the steps here: https://help.github.com/articles/adding-a-remote/).
+3. `git init`
+
+4. `git add .`
+
+5. `git commit -m "First commit"`
+
+6. `git remote add origin <remote repository URL>`
+
+7. `git remote -v`
+
+8. `git push origin master`
 
 *Further pushing*
 
 1. Navigate to the Docker container terminal and make sure you are in the "notebooks" directory. 
 
-2. `git add .` 
+2. `git status`
 
-3. `git commit -m "<MESSAGE>"`
+3. `git add .` 
 
-4. `git push`
+4. `git commit -m "<MESSAGE>"`
+
+5. `git push`
 
  
