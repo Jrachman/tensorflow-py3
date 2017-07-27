@@ -1,6 +1,6 @@
-# heavy-ml-py3-docker
+# tensorflow-py3-docker
 
-Designed for heavy computations in Python 3 including TensorFlow.
+Designed for heavy computations in TensorFlow using Python 3.
 
 **Dockerfile:** https://github.com/Jrachman/heavy-ml-py3-docker/blob/master/Dockerfile
 
