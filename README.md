@@ -2,7 +2,7 @@
 
 Designed for heavy computations in TensorFlow using Python 3.
 
-**Dockerfile:** https://github.com/Jrachman/heavy-ml-py3-docker/blob/master/Dockerfile
+**Dockerfile:** https://github.com/Jrachman/tensorflow-py3-docker/blob/master/Dockerfile
 
 **Developer:** Julian Rachman (jmrachman@gmail.com)
 
@@ -22,7 +22,7 @@ Designed for heavy computations in TensorFlow using Python 3.
 
 *Local build*
 
-1. Download the GitHub repository (https://github.com/Jrachman/heavy-ml-py3-docker/), extract, and navigate to the directory where the `Dockerfile` is located using your terminal.
+1. Download the GitHub repository (https://github.com/Jrachman/tensorflow-py3-docker/), extract, and navigate to the directory where the `Dockerfile` is located using your terminal.
 
 2. Then execute the command `docker build .`
  
